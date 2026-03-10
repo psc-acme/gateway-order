@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/gateway-order",
+    "description": "Package gateway-order for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\GatewayOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "spatie/laravel-permission": "^6.0",
+        "brick/math": "^0.12",
+        "doctrine/doctrine-bundle": "^2.13",
+        "psr/event-dispatcher": "^1.0",
+        "ramsey/uuid": "^4.0"
+    },
+    "require-dev": {
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
